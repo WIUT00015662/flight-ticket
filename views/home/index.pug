@@ -17,6 +17,7 @@ body
             th(scope="col") Seat
             th(scope="col") Actions
         tbody
+script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
 script.
   document.addEventListener('DOMContentLoaded', function() {
     axios.get('/api/ticket').then(function(response) {
